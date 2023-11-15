@@ -241,7 +241,7 @@ if (!isset($_SESSION['secret'])) {
                     
                     window.onscroll = function() {
                       var d = document.documentElement;
-                      var offset = d.scrollTop + window.innerHeight + 1;
+                      var offset = d.scrollTop + window.innerHeight + 3;
                       var height = d.offsetHeight;
                     
                       console.log('offset = ' + offset);
