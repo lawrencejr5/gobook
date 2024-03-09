@@ -1,0 +1,122 @@
+[07-May-2023 01:05:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:05:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:07:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:07:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:07:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:09:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:09:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:14:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:14:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:14:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:16:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:16:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:17:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:17:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:17:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:18:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:18:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 01:19:12 UTC] PHP Notice:  Undefined index: aPage in /home2/gobookng/public_html/pages/pages_page/index.php on line 76
+[07-May-2023 01:19:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home2/gobookng/public_html/pages/pages_page/index.php on line 76
+[07-May-2023 01:19:14 UTC] PHP Notice:  Undefined index: aPage in /home2/gobookng/public_html/pages/pages_page/index.php on line 76
+[07-May-2023 01:19:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home2/gobookng/public_html/pages/pages_page/index.php on line 76
+[07-May-2023 01:19:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 06:54:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 17:46:47 UTC] PHP Notice:  Undefined index: id in /home2/gobookng/public_html/backend/class.php on line 4
+[07-May-2023 17:46:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 17:47:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 17:49:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 17:49:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 17:51:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::getAPage() in /home2/gobookng/public_html/pages/pages_page/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home2/gobookng/public_html/pages/pages_page/index.php on line 75
+[07-May-2023 17:52:51 UTC] PHP Notice:  Undefined index: aPage in /home2/gobookng/public_html/pages/pages_page/index.php on line 76
+[07-May-2023 17:52:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home2/gobookng/public_html/pages/pages_page/index.php on line 76
+[12-May-2023 00:19:15 UTC] PHP Notice:  Undefined index: id in /home2/gobookng/public_html/backend/class.php on line 4
+[15-May-2023 13:37:49 UTC] PHP Notice:  Undefined index: id in /home2/gobookng/public_html/backend/class.php on line 4
+[17-Sep-2023 13:46:19 UTC] PHP Notice:  Undefined variable: myPageId in /home2/gobookn3/public_html/pages/pages_page/index.php on line 112
+[17-Sep-2023 13:46:19 UTC] PHP Notice:  Undefined variable: myPageId in /home2/gobookn3/public_html/pages/pages_page/index.php on line 113
+[17-Sep-2023 13:46:19 UTC] PHP Notice:  Undefined variable: datetime in /home2/gobookn3/public_html/pages/pages_page/index.php on line 116
+[17-Sep-2023 13:46:19 UTC] PHP Notice:  Undefined variable: username in /home2/gobookn3/public_html/pages/pages_page/index.php on line 116
+[17-Sep-2023 13:47:04 UTC] PHP Notice:  Undefined variable: datetime in /home2/gobookn3/public_html/pages/pages_page/index.php on line 116
+[17-Sep-2023 13:47:04 UTC] PHP Notice:  Undefined variable: username in /home2/gobookn3/public_html/pages/pages_page/index.php on line 116
+[28-Sep-2023 04:43:09 UTC] PHP Notice:  Undefined variable: cover_photo in /home2/gobookn3/public_html/pages/pages_page/index.php on line 101
+[28-Sep-2023 04:43:09 UTC] PHP Notice:  Undefined variable: page_name in /home2/gobookn3/public_html/pages/pages_page/index.php on line 105
+[28-Sep-2023 04:43:09 UTC] PHP Notice:  Undefined variable: page_description in /home2/gobookn3/public_html/pages/pages_page/index.php on line 106
+[28-Sep-2023 04:43:09 UTC] PHP Notice:  Undefined variable: date in /home2/gobookn3/public_html/pages/pages_page/index.php on line 142
+[28-Sep-2023 04:43:09 UTC] PHP Notice:  Undefined variable: page_username in /home2/gobookn3/public_html/pages/pages_page/index.php on line 142
+[28-Sep-2023 19:39:22 UTC] PHP Notice:  Undefined index: id in /home2/gobookn3/public_html/backend/class.php on line 4
+[28-Sep-2023 19:39:22 UTC] PHP Notice:  Undefined variable: user_id in /home2/gobookn3/public_html/pages/pages_page/index.php on line 115
+[28-Sep-2023 19:39:22 UTC] PHP Notice:  Undefined variable: user_id in /home2/gobookn3/public_html/pages/pages_page/index.php on line 121
+[28-Sep-2023 19:39:22 UTC] PHP Notice:  Undefined variable: user in /home2/gobookn3/public_html/pages/pages_page/index.php on line 122
+[28-Sep-2023 19:39:22 UTC] PHP Notice:  Undefined variable: profileImg in /home2/gobookn3/public_html/pages/pages_page/index.php on line 123
+[28-Sep-2023 19:39:22 UTC] PHP Notice:  Undefined variable: verified in /home2/gobookn3/public_html/pages/pages_page/index.php on line 124
