@@ -17,9 +17,16 @@ if (!isset($_SESSION['secret'])) {
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- <script src="../assets/js/jquery-3.6.1.js"></script> -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+        integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Gobook-Home</title>
 </head>
 
@@ -34,17 +41,21 @@ if (!isset($_SESSION['secret'])) {
                         $user = $u['username'];
                         $user_id = $u['id'];
                         $verified = $u['verified'];
-                    ?>
-                        <a href="../account/"><img src="../assets/profilePics/<?= $profileImg ?>" style="border-radius: 50%; border: 3px solid white;" height="35px" width="35px" class="account" /></a>
-                    <?php
+                        ?>
+                        <a href="../account/"><img src="../assets/profilePics/<?= $profileImg ?>"
+                                style="border-radius: 50%; border: 3px solid white;" height="35px" width="35px"
+                                class="account" /></a>
+                        <?php
                     }
                     ?>
                 </div>
                 <div class="col-4 mt-3">
-                    <h3 class="logo"><img src="../assets/images/Gobook logo/logo.jpg" alt="" height="35px" style="border: 1px solid white"></h3>
+                    <h3 class="logo"><img src="../assets/images/Gobook logo/logo.jpg" alt="" height="35px"
+                            style="border: 1px solid white"></h3>
                 </div>
                 <div class="col-4 mt-3" 6>
-                    <a href="../chats/"><i class="bi bi-chat-dots" style="font-size: 25px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="../chats/"><i class="bi bi-chat-dots"
+                            style="font-size: 25px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="../search"><i class="bi bi-search" style="font-size: 25px;"></i></a>
                 </div>
             </div>
@@ -96,13 +107,14 @@ if (!isset($_SESSION['secret'])) {
                             $profileImg = $us['profile_pic'];
                             $dept = $us['department'];
 
-                        ?>
+                            ?>
                             <div class="honlinelayout">
-                                <a href="./latest_users/?id=<?= $id ?>"><img src="../assets/profilePics/<?= $profileImg ?>" style="border-radius: 50%;" height="45px" width="45px" class="account" /></a>
+                                <a href="./latest_users/?id=<?= $id ?>"><img src="../assets/profilePics/<?= $profileImg ?>"
+                                        style="border-radius: 50%;" height="45px" width="45px" class="account" /></a>
                                 <br>
                                 <small><?= $username ?></small>
                             </div>
-                        <?php
+                            <?php
                         }
                         ?>
                     </div>
@@ -122,14 +134,18 @@ if (!isset($_SESSION['secret'])) {
             <div class="container" id="body">
 
                 <div class="mainbody">
-                    <h4 style="color: rgb(24, 119, 242); background-color: white; box-shadow: 1px 1px 5px rgb(201, 198, 198); padding: .6rem; width: 300px;">Latests Posts</h4>
+                    <h4
+                        style="color: rgb(24, 119, 242); background-color: white; box-shadow: 1px 1px 5px rgb(201, 198, 198); padding: .6rem; width: 300px;">
+                        Latests Posts</h4>
 
                     <div class="posts">
 
 
                     </div>
                     <!--<span style="font-size: 20px; font-weight: 600; text-align: center;" class="getting"></span>-->
-                    <button class="getData" style="font-weight: 600; box-shadow: 1px 1px 8px grey; border-radius: 5px; background: rgb(24, 119, 242); width: 100%; padding: .3rem 0; color: white; border: none; outline: none; " onClick="getData()">Get older posts</button>
+                    <button class="getData"
+                        style="font-weight: 600; box-shadow: 1px 1px 8px grey; border-radius: 5px; background: rgb(24, 119, 242); width: 100%; padding: .3rem 0; color: white; border: none; outline: none; "
+                        onClick="getData()">Get older posts</button>
                 </div>
                 <div class="trending">
                     <h3 style=" font-weight: 700;">Wetin they happen?</h3>
@@ -203,7 +219,7 @@ if (!isset($_SESSION['secret'])) {
 </body>
 <!-- <script src="../assets/js/jquery-3.6.1.js"></script> -->
 <script>
-    
+
     const getDataBtn = document.querySelector(".getData")
     getDataBtn.addEventListener("click", () => {
         getDataBtn.textContent = "Getting..."
@@ -214,7 +230,7 @@ if (!isset($_SESSION['secret'])) {
     $(document).ready(() => {
 
         getData();
-        
+
     })
 
     let start = 0
@@ -232,35 +248,32 @@ if (!isset($_SESSION['secret'])) {
                 start: start,
                 limit: limit
             },
-            success: function(response) {
+            success: function (response) {
                 if (response == "reachedMax") {
                     reachedMax = true;
                 } else {
                     limit += 10
                     $(".posts").html(response)
-                    
-                    window.onscroll = function() {
-                      var d = document.documentElement;
-                      var offset = d.scrollTop + window.innerHeight + 1;
-                      var height = d.offsetHeight;
-                    
-                      console.log('offset = ' + offset);
-                      console.log('height = ' + height);
-                    
-                      if (offset >= height) {
+
+                    window.onscroll = function () {
+                        var d = document.documentElement;
+                        var offset = d.scrollTop + window.innerHeight + 1;
+                        var height = d.offsetHeight;
+
+                        if (offset >= height) {
                             const getDatBtn = document.querySelector(".getData")
                             getDatBtn.textContent = "Getting more..."
                             setTimeout(() => {
                                 getDatBtn.textContent = "Get Older Posts"
                             }, 1500)
-                            
-                        getData()
-                      }
+
+                            getData()
+                        }
                     };
-                    
-                    
-                    
-                    $(".like").click(function() {
+
+
+
+                    $(".like").click(function () {
                         let postId = $(this).attr("postId")
                         let liker = $(this).attr("liker")
                         let poster = $(this).attr("poster")

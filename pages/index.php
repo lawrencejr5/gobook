@@ -4,7 +4,7 @@ if(!isset($_SESSION['id'])){
         header("location: ../signin/");
     }
 $database = new Database;
-$myPageId = $_GET['id'];
+
 ?>
 
 <!DOCTYPE html>

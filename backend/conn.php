@@ -1,24 +1,22 @@
 <?php
 
-class Connection{
+class Connection
+{
 
     protected $conn;
 
-    public function __construct(){
-        // $dbhost = "localhost:3325";
+    public function __construct()
+    {
         $dbhost = "localhost";
-        // $dbuser = "root";
-        $dbuser = "gobookn3_lawjun";
-        // $dbpass = "";
-        $dbpass = "Law3221211#$*";
-        $dbname = "gobookn3_database";
+        $dbuser = "root";
+        $dbpass = "";
+        $dbname = "gobook";
 
-        try{
-            $this -> conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
-            $this -> conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $this -> conn;
-        }catch(PDOException $e){
-            return $e->getMessage();
+        try {
+            $this->conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die("Database Connection Error: " . $e->getMessage());
         }
     }
 }
