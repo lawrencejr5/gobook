@@ -138,14 +138,8 @@ if (!isset($_SESSION['secret'])) {
                         style="color: rgb(24, 119, 242); background-color: white; box-shadow: 1px 1px 5px rgb(201, 198, 198); padding: .6rem; width: 300px;">
                         Latests Posts</h4>
 
-                    <div class="posts">
+                    <div class="posts"></div>
 
-
-                    </div>
-                    <!--<span style="font-size: 20px; font-weight: 600; text-align: center;" class="getting"></span>-->
-                    <button class="getData"
-                        style="font-weight: 600; box-shadow: 1px 1px 8px grey; border-radius: 5px; background: rgb(24, 119, 242); width: 100%; padding: .3rem 0; color: white; border: none; outline: none; "
-                        onClick="getData()">Get older posts</button>
                 </div>
                 <div class="trending">
                     <h3 style=" font-weight: 700;">Wetin they happen?</h3>
@@ -220,26 +214,19 @@ if (!isset($_SESSION['secret'])) {
 <!-- <script src="../assets/js/jquery-3.6.1.js"></script> -->
 <script>
 
-    const getDataBtn = document.querySelector(".getData")
-    getDataBtn.addEventListener("click", () => {
-        getDataBtn.textContent = "Getting..."
-        setTimeout(() => {
-            getDataBtn.textContent = "Get Older Posts"
-        }, 1500)
-    })
     $(document).ready(() => {
-
         getData();
+    });
 
-    })
-
-    let start = 0
-    let limit = 10
+    let start = 0;
+    let limit = 10;
     let reachedMax = false;
-    // const postsDiv = document.querySelector(".posts")
+    let loading = false;
+
     function getData() {
-        if (reachedMax)
-            return;
+        if (reachedMax || loading) return;
+        loading = true;
+
         $.ajax({
             url: "../back_action/get_posts.php",
             method: "POST",
@@ -249,74 +236,59 @@ if (!isset($_SESSION['secret'])) {
                 limit: limit
             },
             success: function (response) {
-                if (response == "reachedMax") {
+                loading = false;
+                if (response.trim() == "reachedMax") {
                     reachedMax = true;
                 } else {
-                    limit += 10
-                    $(".posts").html(response)
-
-                    window.onscroll = function () {
-                        var d = document.documentElement;
-                        var offset = d.scrollTop + window.innerHeight + 1;
-                        var height = d.offsetHeight;
-
-                        if (offset >= height) {
-                            const getDatBtn = document.querySelector(".getData")
-                            getDatBtn.textContent = "Getting more..."
-                            setTimeout(() => {
-                                getDatBtn.textContent = "Get Older Posts"
-                            }, 1500)
-
-                            getData()
-                        }
-                    };
-
-
-
-                    $(".like").click(function () {
-                        let postId = $(this).attr("postId")
-                        let liker = $(this).attr("liker")
-                        let poster = $(this).attr("poster")
-                        let userImg = $(this).attr("user_img")
-                        let userImg2 = $(this).attr("user_img2")
-                        let userId = $(this).attr("user_id")
-                        let userId2 = $(this).attr("user_id2")
-                        let verified = $(this).attr("verified")
-
-                        if ($(this).children(".fa-heart").hasClass("fa-regular")) {
-                            $(this).children(".fa-heart").removeClass("fa-regular").addClass("fa-solid")
-                        } else if ($(this).children(".fa-heart").hasClass("fa-solid")) {
-                            $(this).children(".fa-heart").removeClass("fa-solid").addClass("fa-regular")
-                        }
-
-                        $.ajax({
-                            url: "../back_action/like_post.php",
-                            type: "post",
-                            data: {
-                                postId: postId,
-                                liker: liker,
-                                poster: poster,
-                                userId: userId,
-                                userId2: userId2,
-                                userImg: userImg,
-                                userImg2: userImg2,
-                                verified: verified
-                            },
-                            success: (r) => {
-                                if (r == 0) {
-                                    r = ""
-                                }
-                                $(this).children(".no_of_likes").html(`${r} `)
-
-
-                            }
-                        })
-                    })
+                    $(".posts").append(response);
+                    start += limit;
                 }
-
             }
-        })
+        });
     }
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 200) {
+            getData();
+        }
+    });
+
+    $(document).on("click", ".like", function () {
+        let $this = $(this);
+        let postId = $this.attr("postId");
+        let liker = $this.attr("liker");
+        let poster = $this.attr("poster");
+        let userImg = $this.attr("user_img");
+        let userImg2 = $this.attr("user_img2");
+        let userId = $this.attr("user_id");
+        let userId2 = $this.attr("user_id2");
+        let verified = $this.attr("verified");
+
+        if ($this.find(".fa-heart").hasClass("fa-regular")) {
+            $this.find(".fa-heart").removeClass("fa-regular").addClass("fa-solid");
+        } else if ($this.find(".fa-heart").hasClass("fa-solid")) {
+            $this.find(".fa-heart").removeClass("fa-solid").addClass("fa-regular");
+        }
+
+        $.ajax({
+            url: "../back_action/like_post.php",
+            type: "post",
+            data: {
+                postId: postId,
+                liker: liker,
+                poster: poster,
+                userId: userId,
+                userId2: userId2,
+                userImg: userImg,
+                userImg2: userImg2,
+                verified: verified
+            },
+            success: (r) => {
+                if (r == 0) r = "";
+                $this.find(".no_of_likes").html(`${r} `);
+            }
+        });
+    });
 </script>
 
 </html>
